@@ -93,10 +93,9 @@ def testarepetidosvertical(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9
         or jogo7[k][k]==jogo8[k][k]
         or jogo7[k][k]==jogo9[k][k]
         or jogo8[k][k]==jogo9[k][k]):
-            # Repetido vertical
+            return False
         else:
-            # Sem repetidos na vertical
+            return True
 
-# Testa se o jogo horizontal está completo
 if testacompletahorizontal(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9): #and testacompletavertical(): - necessário testar verticais também
     print("Jogo vencido")
