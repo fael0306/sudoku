@@ -56,5 +56,5 @@ matriz8 = [[2,8,7],[4,1,9],[6,3,5]]
 matriz9 = [[3,4,5],[2,8,6],[1,7,9]]
 
 # Testa se o jogo horizontal está completo
-if testacompletahorizontal(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9): #and testacompletavertical():
+if testacompletahorizontal(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9): #and testacompletavertical(): - necessário testar verticais também
     print("Jogo vencido")
