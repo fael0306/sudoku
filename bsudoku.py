@@ -102,7 +102,7 @@ def testavitoria():
         return True
     return False
 
-def mostrajogo(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9):
+def mostrajogo():
     for k in range(3):
         print(" ".join(jogo1[k])," ".join(jogo2[k])," ".join(jogo3[k]))
         print(" ".join(jogo4[k])," ".join(jogo5[k])," ".join(jogo6[k]))
