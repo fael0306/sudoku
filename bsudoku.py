@@ -57,8 +57,45 @@ matriz9 = [[3,4,5],[2,8,6],[1,7,9]]
 
 def testarepetidosvertical(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9):
     for k in range(0,9):
-        if jogo1[k][k]==jogo2[k][k]:
+        if (jogo1[k][k]==jogo2[k][k] 
+        or jogo1[k][k]==jogo3[k][k] 
+        or jogo1[k][k]==jogo4[k][k] 
+        or jogo1[k][k]==jogo5[k][k] 
+        or jogo1[k][k]==jogo6[k][k] 
+        or jogo1[k][k]==jogo7[k][k] 
+        or jogo1[k][k]==jogo8[k][k] 
+        or jogo1[k][k]==jogo9[k][k]
+        or jogo2[k][k]==jogo3[k][k]
+        or jogo2[k][k]==jogo4[k][k]
+        or jogo2[k][k]==jogo5[k][k]
+        or jogo2[k][k]==jogo6[k][k]
+        or jogo2[k][k]==jogo7[k][k]
+        or jogo2[k][k]==jogo8[k][k]
+        or jogo2[k][k]==jogo9[k][k]
+        or jogo3[k][k]==jogo4[k][k]
+        or jogo3[k][k]==jogo5[k][k]
+        or jogo3[k][k]==jogo6[k][k]
+        or jogo3[k][k]==jogo7[k][k]
+        or jogo3[k][k]==jogo8[k][k]
+        or jogo3[k][k]==jogo9[k][k]
+        or jogo4[k][k]==jogo5[k][k]
+        or jogo4[k][k]==jogo6[k][k]
+        or jogo4[k][k]==jogo7[k][k]
+        or jogo4[k][k]==jogo8[k][k]
+        or jogo4[k][k]==jogo9[k][k]
+        or jogo5[k][k]==jogo6[k][k]
+        or jogo5[k][k]==jogo7[k][k]
+        or jogo5[k][k]==jogo8[k][k]
+        or jogo5[k][k]==jogo9[k][k]
+        or jogo6[k][k]==jogo7[k][k]
+        or jogo6[k][k]==jogo8[k][k]
+        or jogo6[k][k]==jogo9[k][k]
+        or jogo7[k][k]==jogo8[k][k]
+        or jogo7[k][k]==jogo9[k][k]
+        or jogo8[k][k]==jogo9[k][k]):
             # Repetido vertical
+        else:
+            # Sem repetidos na vertical
 
 # Testa se o jogo horizontal está completo
 if testacompletahorizontal(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9): #and testacompletavertical(): - necessário testar verticais também
