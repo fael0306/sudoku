@@ -55,6 +55,11 @@ matriz7 = [[9,6,1],[5,3,7],[2,8,4]]
 matriz8 = [[2,8,7],[4,1,9],[6,3,5]]
 matriz9 = [[3,4,5],[2,8,6],[1,7,9]]
 
+def testarepetidosvertical(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9):
+    for k in range(0,9):
+        if jogo1[k][k]==jogo2[k][k]:
+            # Repetido vertical
+
 # Testa se o jogo horizontal está completo
 if testacompletahorizontal(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9): #and testacompletavertical(): - necessário testar verticais também
     print("Jogo vencido")
