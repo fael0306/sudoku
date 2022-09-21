@@ -12,3 +12,5 @@ for k in range(3):
     print(" ".join(jogo1[k])," ".join(jogo2[k])," ".join(jogo3[k]))
     print(" ".join(jogo4[k])," ".join(jogo5[k])," ".join(jogo6[k]))
     print(" ".join(jogo7[k])," ".join(jogo8[k])," ".join(jogo9[k]))
+
+# Só pode testar vitória quando todos os espaços estiverem preenchidos
