@@ -101,3 +101,9 @@ def testavitoria():
     if testacompletahorizontal(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9) and testarepetidosvertical(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9):
         return True
     return False
+
+def mostrajogo(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9):
+    for k in range(3):
+        print(" ".join(jogo1[k])," ".join(jogo2[k])," ".join(jogo3[k]))
+        print(" ".join(jogo4[k])," ".join(jogo5[k])," ".join(jogo6[k]))
+        print(" ".join(jogo7[k])," ".join(jogo8[k])," ".join(jogo9[k]))
