@@ -7,7 +7,6 @@ def testarepetidosh(jogo):
                     if (comp == jogo[k][n] and (k!=i or n!=j)):
                         return False
     return True
-
     
 def testahorizontal(jogo):
     soma = 0
