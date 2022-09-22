@@ -21,24 +21,25 @@ while bsudoku.testavitoria(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9
     p2 = int(input("Digite a coluna: "))
     while p2<1 or p2>9:
         p2 = int(input("Digite uma coluna válida: "))
-    # if's errados. Necessário rever como colocar na linha e coluna correta.
+# Descobrir onde está o erro: o número vai para a posição errada
     if p1==1:
-        jogo1[p1-1][p2-1] = n
+        bsudoku.lugarcorreto(jogo1,p2,n)
     if p1==2:
-        jogo2[p1-1][p2-1] = n
+        bsudoku.lugarcorreto(jogo2,p2,n)
     if p1==3:
-        jogo3[p1-1][p2-1] = n
+        bsudoku.lugarcorreto(jogo3,p2,n)
     if p1==4:
-        jogo4[p1-1][p2-1] = n
+        bsudoku.lugarcorreto(jogo4,p2,n)
     if p1==5:
-        jogo5[p1-1][p2-1] = n
+        bsudoku.lugarcorreto(jogo5,p2,n)
     if p1==6:
-        jogo6[p1-1][p2-1] = n
+        bsudoku.lugarcorreto(jogo6,p2,n)
     if p1==7:
-        jogo7[p1-1][p2-1] = n
+        bsudoku.lugarcorreto(jogo7,p2,n)
     if p1==8:
-        jogo8[p1-1][p2-1] = n
+        bsudoku.lugarcorreto(jogo8,p2,n)
     if p1==9:
-        jogo9[p1-1][p2-1] = n
+        bsudoku.lugarcorreto(jogo9,p2,n)
+        
     bsudoku.mostrajogo(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9)
     

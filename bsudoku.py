@@ -96,3 +96,26 @@ def mostrajogo(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9):
         print(" ".join(str(jogo1[k]))," ".join(str(jogo2[k]))," ".join(str(jogo3[k])))
         print(" ".join(str(jogo4[k]))," ".join(str(jogo5[k]))," ".join(str(jogo6[k])))
         print(" ".join(str(jogo7[k]))," ".join(str(jogo8[k]))," ".join(str(jogo9[k])))
+
+def lugarcorreto(jogo,p2,n):
+    if p2<=3:
+        if p2==1:
+            jogo[0][0]=n
+        elif p2==2:
+            jogo[0][1]=n
+        elif p2==3:
+            jogo[0][2]=n
+    elif p2<=6:
+        if p2==4:
+            jogo[1][0]=n
+        elif p2==5:
+            jogo[1][1]=n
+        elif p2==6:
+            jogo[1][2]=n
+    elif p2<=9:
+        if p2==7:
+            jogo[2][0]=n
+        elif p2==8:
+            jogo[2][1]=n
+        elif p2==9:
+            jogo[2][2]=n
