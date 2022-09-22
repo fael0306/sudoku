@@ -92,6 +92,7 @@ def testavitoria(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8
         return True
     return False
 
+# Refazer essa função. Está printando errado.
 def mostrajogo(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9):
     print(" ".join(str(jogo1[0]))," ".join(str(jogo1[1])))
        # print(" ".join(str(jogo2[k])))
