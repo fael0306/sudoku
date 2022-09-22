@@ -1,6 +1,6 @@
 import bsudoku
 
-jogo1 = [[0,0,0],[0,0,0],[0,0,0]]
+jogo1 = [[1,2,3],[4,5,6],[7,8,9]]
 jogo2 = [[0,0,0],[0,0,0],[0,0,0]]
 jogo3 = [[0,0,0],[0,0,0],[0,0,0]]
 jogo4 = [[0,0,0],[0,0,0],[0,0,0]]
@@ -21,25 +21,24 @@ while bsudoku.testavitoria(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9
     p2 = int(input("Digite a coluna: "))
     while p2<1 or p2>9:
         p2 = int(input("Digite uma coluna válida: "))
-# Descobrir onde está o erro: o número vai para a posição errada
-    if p1==1:
-        bsudoku.lugarcorreto(jogo1,p2,n)
-    if p1==2:
-        bsudoku.lugarcorreto(jogo2,p2,n)
-    if p1==3:
-        bsudoku.lugarcorreto(jogo3,p2,n)
-    if p1==4:
-        bsudoku.lugarcorreto(jogo4,p2,n)
-    if p1==5:
-        bsudoku.lugarcorreto(jogo5,p2,n)
-    if p1==6:
-        bsudoku.lugarcorreto(jogo6,p2,n)
-    if p1==7:
-        bsudoku.lugarcorreto(jogo7,p2,n)
-    if p1==8:
-        bsudoku.lugarcorreto(jogo8,p2,n)
-    if p1==9:
-        bsudoku.lugarcorreto(jogo9,p2,n)
+# A forma de printar a matriz está errada. Erro está na função mostrarjogo.
+   # if p1==1:
+        
+    #if p1==2:
+        
+    #if p1==3:
+        
+    #if p1==4:
+        
+    #if p1==5:
+        
+    #if p1==6:
+        
+    #if p1==7:
+        
+    #if p1==8:
+        
+    #if p1==9:
         
     bsudoku.mostrajogo(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9)
     
