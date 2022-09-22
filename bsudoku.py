@@ -44,17 +44,6 @@ def testacompletahorizontal(matriz,matriz1,matriz2,matriz3,matriz4,matriz5,matri
         return True
     return False
 
-# Jogo ganho para testes
-matriz1 = [[5,3,4],[6,7,8],[9,1,2]]
-matriz2 = [[6,7,2],[1,9,5],[3,4,8]]
-matriz3 = [[1,9,8],[3,4,2],[5,6,7]]
-matriz4 = [[8,5,9],[7,6,1],[4,2,3]]
-matriz5 = [[4,2,6],[8,5,3],[7,9,1]]
-matriz6 = [[7,1,3],[9,2,4],[8,5,6]]
-matriz7 = [[9,6,1],[5,3,7],[2,8,4]]
-matriz8 = [[2,8,7],[4,1,9],[6,3,5]]
-matriz9 = [[3,4,5],[2,8,6],[1,7,9]]
-
 def testarepetidosvertical(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9):
     for k in range(0,9):
         if (jogo1[k][k]==jogo2[k][k] 
@@ -97,13 +86,13 @@ def testarepetidosvertical(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9
         else:
             return True
 
-def testavitoria():
+def testavitoria(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9):
     if testacompletahorizontal(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9) and testarepetidosvertical(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9):
         return True
     return False
 
-def mostrajogo():
+def mostrajogo(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9):
     for k in range(3):
-        print(" ".join(jogo1[k])," ".join(jogo2[k])," ".join(jogo3[k]))
-        print(" ".join(jogo4[k])," ".join(jogo5[k])," ".join(jogo6[k]))
-        print(" ".join(jogo7[k])," ".join(jogo8[k])," ".join(jogo9[k]))
+        print(" ".join(str(jogo1[k]))," ".join(str(jogo2[k]))," ".join(str(jogo3[k])))
+        print(" ".join(str(jogo4[k]))," ".join(str(jogo5[k]))," ".join(str(jogo6[k])))
+        print(" ".join(str(jogo7[k]))," ".join(str(jogo8[k]))," ".join(str(jogo9[k])))
