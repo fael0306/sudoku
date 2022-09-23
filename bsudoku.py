@@ -28,7 +28,7 @@ def testarepetidosv(matriz):
     return True
 #def testavertical(jogo) - Verifica se a soma dá 45 em todas as verticais. Chama a função para testar repetidos antes, caso haja repetidos, nem roda a soma.
 #                          Vertical: repete a coluna e varia cada linha, depois varia a coluna e repete a linha... 
-#def testarepetidosq(jogo) - Verifica se a soma de cada quadrado 3x3 da matriz possui números diferentes
+#def testarepetidosq(jogo) - Verifica se cada elemento de cada quadrado 3x3 da matriz possui números diferentes
 #def testaquadrados(jogo) - Verifica se 00 01 02 10 11 12 20 21 22 são diferentes e somam 45
 #                                       03 04 05 13 14 15 23 24 25 são diferentes e somam 45
 #                                       06 07 08 16 17 18 26 27 28 são diferentes e somam 45
