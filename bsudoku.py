@@ -19,7 +19,7 @@ def testahorizontal(jogo):
         return False
     return True
 
-def testarepetidosvertical(matriz):
+def testarepetidosv(matriz):
     for k in range(0,9):
         for i in range(0,8):
             for j in range(i+1,9):
