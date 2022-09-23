@@ -1,14 +1,6 @@
 import bsudoku
 
-jogo = [[0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0]]
+jogo = bsudoku.sorteiasudoku()
 
 bsudoku.mostrajogo(jogo)
 #while bsudoku.testavitoria(jogo)==False:
