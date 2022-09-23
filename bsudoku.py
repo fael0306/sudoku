@@ -1,117 +1,48 @@
 def testarepetidosh(jogo):
-    for i in range(0,3):
-        for j in range(0,3):
-            comp = jogo[i][j]
-            for k in range(0,3):
-                for n in range(0,3):
-                    if (comp == jogo[k][n] and (k!=i or n!=j)):
-                        return False
+    for i in range(0,9):
+        for j in range(0,8):
+            for n in range(j+1,9):
+                if (jogo[i][j] == jogo[i][n]):
+                    return False
     return True
     
 def testahorizontal(jogo):
     soma = 0
     if(testarepetidosh(jogo)):
-        for k in range(0,3):
-            for i in range(0,3):
-                if jogo[k][i]!="_":
-                    soma = soma+jogo[k][i]
-    if soma==45:
-        return True
+        for k in range(0,9):
+            for i in range(0,9):
+                soma = soma+jogo[k][i]
+            if soma!=45:
+                return False
+            soma = 0
     else:
         return False
+    return True
 
-def testacompletahorizontal(matriz,matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8):
-    total = 0
-    if testahorizontal(matriz):
-        total = total+1
-    if testahorizontal(matriz1):
-        total = total+1
-    if testahorizontal(matriz2):
-        total = total+1
-    if testahorizontal(matriz3):
-        total = total+1
-    if testahorizontal(matriz4):
-        total = total+1
-    if testahorizontal(matriz5):
-        total = total+1
-    if testahorizontal(matriz6):
-        total = total+1
-    if testahorizontal(matriz7):
-        total = total+1
-    if testahorizontal(matriz8):
-        total = total+1
-    if total==9:
-        return True
-    return False
+#def testarepetidosv(jogo) - Verifica se há repetidos nas verticais da matriz.
+#def testavertical(jogo) - Verifica se a soma dá 45 em todas as verticais. Chama a função para testar repetidos antes, caso haja repetidos, nem roda a soma.
+#                          Vertical: repete a coluna e varia cada linha, depois varia a coluna e repete a linha... 
+#def testarepetidosq(jogo) - Verifica se a soma de cada quadrado 3x3 da matriz possui números diferentes
+#def testaquadrados(jogo) - Verifica se 00 01 02 10 11 12 20 21 22 são diferentes e somam 45
+#                                       03 04 05 13 14 15 23 24 25 são diferentes e somam 45
+#                                       06 07 08 16 17 18 26 27 28 são diferentes e somam 45
+#                                       30 31 32 40 41 42 50 51 52 são diferentes e somam 45
+#                                       33 34 35 43 44 52 53 54 55 são diferentes e somam 45
+#                                       36 37 38 46 47 48 56 57 58 são diferentes e somam 45
+#                                       60 61 62 70 71 72 80 81 82 são diferentes e somam 45
+#                                       63 64 65 73 74 75 83 84 85 são diferentes e somam 45
+#                                       66 67 68 76 77 78 86 87 88 são diferentes e somam 45
+#                                       NECESSÁRIO ACHAR O PADRÃO DE REPETIÇÃO PARA TESTAR
 
-def testarepetidosvertical(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9):
-    for k in range(0,9):
-        if (jogo1[k][k]==jogo2[k][k] 
-        or jogo1[k][k]==jogo3[k][k] 
-        or jogo1[k][k]==jogo4[k][k] 
-        or jogo1[k][k]==jogo5[k][k] 
-        or jogo1[k][k]==jogo6[k][k] 
-        or jogo1[k][k]==jogo7[k][k] 
-        or jogo1[k][k]==jogo8[k][k] 
-        or jogo1[k][k]==jogo9[k][k]
-        or jogo2[k][k]==jogo3[k][k]
-        or jogo2[k][k]==jogo4[k][k]
-        or jogo2[k][k]==jogo5[k][k]
-        or jogo2[k][k]==jogo6[k][k]
-        or jogo2[k][k]==jogo7[k][k]
-        or jogo2[k][k]==jogo8[k][k]
-        or jogo2[k][k]==jogo9[k][k]
-        or jogo3[k][k]==jogo4[k][k]
-        or jogo3[k][k]==jogo5[k][k]
-        or jogo3[k][k]==jogo6[k][k]
-        or jogo3[k][k]==jogo7[k][k]
-        or jogo3[k][k]==jogo8[k][k]
-        or jogo3[k][k]==jogo9[k][k]
-        or jogo4[k][k]==jogo5[k][k]
-        or jogo4[k][k]==jogo6[k][k]
-        or jogo4[k][k]==jogo7[k][k]
-        or jogo4[k][k]==jogo8[k][k]
-        or jogo4[k][k]==jogo9[k][k]
-        or jogo5[k][k]==jogo6[k][k]
-        or jogo5[k][k]==jogo7[k][k]
-        or jogo5[k][k]==jogo8[k][k]
-        or jogo5[k][k]==jogo9[k][k]
-        or jogo6[k][k]==jogo7[k][k]
-        or jogo6[k][k]==jogo8[k][k]
-        or jogo6[k][k]==jogo9[k][k]
-        or jogo7[k][k]==jogo8[k][k]
-        or jogo7[k][k]==jogo9[k][k]
-        or jogo8[k][k]==jogo9[k][k]):
-            return False
-        else:
-            return True
+#def testavitoria(matriz):
+#    if testahorizontal(matriz) and testavertical(matriz) adn testaquadrados(matriz):
+#        return True
+#    return False
 
-
-#def testaquadrado(matriz1,matriz2,matriz3):
-    # Comparações:
-    # 00: 01 02 dele próprio
-    # 00: 00 01 02 das outras 2 matrizes
-    # 10: 11 12 dele próprio
-    # 10: 10 11 12 das outras 2 matrizes
-    # 20: 21 22 dele próprio
-    # 20: 20 21 22 das outras 2 matrizes
-    # Além disso, a soma dos elementos comparados precisa dar 45
-
-# Necessário uma função que testa se o quadrado jogo1[n], jogo2[n] e jogo3[n] soma 45 e estão com números diferentes, pois não pode repetir nos quadrados e precisa ter todos os números também
-def testavitoria(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9):
-    if testacompletahorizontal(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9) and testarepetidosvertical(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9) and :
-        return True
-    return False
-
-# Refazer essa função. Está printando errado.
-def mostrajogo(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9):
-    #print(" ".join(str(jogo1[0])))
-    #print(" ".join(str(jogo1[1])))
-    #print(" ".join(str(jogo2[k])))
-    #print(" ".join(str(jogo3[k])))
-    #print(" ".join(str(jogo4[k])))
-    #print(" ".join(str(jogo5[k])))
-    #print(" ".join(str(jogo6[k])))
-    #print(" ".join(str(jogo7[k])))
-    #print(" ".join(str(jogo8[k])))
-    #print(" ".join(str(jogo9[k])))
+def mostrajogo(jogo):
+    a = ""
+    for i in range(9):
+        for k in list(jogo[i]):
+            a = a+str(k)
+        print(a)
+        a=""

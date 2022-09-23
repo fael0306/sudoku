@@ -1,26 +1,26 @@
 import bsudoku
 
-jogo1 = [[1,2,3],[4,5,6],[7,8,9]]
-jogo2 = [[0,0,0],[0,0,0],[0,0,0]]
-jogo3 = [[0,0,0],[0,0,0],[0,0,0]]
-jogo4 = [[0,0,0],[0,0,0],[0,0,0]]
-jogo5 = [[0,0,0],[0,0,0],[0,0,0]]
-jogo6 = [[0,0,0],[0,0,0],[0,0,0]]
-jogo7 = [[0,0,0],[0,0,0],[0,0,0]]
-jogo8 = [[0,0,0],[0,0,0],[0,0,0]]
-jogo9 = [[0,0,0],[0,0,0],[0,0,0]]
+jogo = [[0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0]]
 
-bsudoku.mostrajogo(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9)
-while bsudoku.testavitoria(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9)==False:
-    n = int(input("Digite o número: "))
-    while n<1 or n>9:
-        n = int(input("Digite um número válido: "))
-    p1 = int(input("Digite a linha: "))
-    while p1<1 or p1>9:
-        p1 = int(input("Digite uma linha válida: "))
-    p2 = int(input("Digite a coluna: "))
-    while p2<1 or p2>9:
-        p2 = int(input("Digite uma coluna válida: "))
+bsudoku.mostrajogo(jogo)
+#while bsudoku.testavitoria(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9)==False:
+#    n = int(input("Digite o número: "))
+#    while n<1 or n>9:
+#        n = int(input("Digite um número válido: "))
+#    p1 = int(input("Digite a linha: "))
+#    while p1<1 or p1>9:
+#        p1 = int(input("Digite uma linha válida: "))
+#    p2 = int(input("Digite a coluna: "))
+#    while p2<1 or p2>9:
+#        p2 = int(input("Digite uma coluna válida: "))
 # A forma de printar a matriz está errada. Erro está na função mostrarjogo.
    # if p1==1:
         
@@ -40,5 +40,5 @@ while bsudoku.testavitoria(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9
         
     #if p1==9:
         
-    bsudoku.mostrajogo(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9)
+#    bsudoku.mostrajogo(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9)
     
