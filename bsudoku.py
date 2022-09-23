@@ -85,21 +85,33 @@ def testarepetidosvertical(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9
             return False
         else:
             return True
-    
+
+
+#def testaquadrado(matriz1,matriz2,matriz3):
+    # Comparações:
+    # 00: 01 02 dele próprio
+    # 00: 00 01 02 das outras 2 matrizes
+    # 10: 11 12 dele próprio
+    # 10: 10 11 12 das outras 2 matrizes
+    # 20: 21 22 dele próprio
+    # 20: 20 21 22 das outras 2 matrizes
+    # Além disso, a soma dos elementos comparados precisa dar 45
+
 # Necessário uma função que testa se o quadrado jogo1[n], jogo2[n] e jogo3[n] soma 45 e estão com números diferentes, pois não pode repetir nos quadrados e precisa ter todos os números também
 def testavitoria(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9):
-    if testacompletahorizontal(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9) and testarepetidosvertical(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9):
+    if testacompletahorizontal(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9) and testarepetidosvertical(matriz1,matriz2,matriz3,matriz4,matriz5,matriz6,matriz7,matriz8,matriz9) and :
         return True
     return False
 
 # Refazer essa função. Está printando errado.
 def mostrajogo(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9):
-    print(" ".join(str(jogo1[0]))," ".join(str(jogo1[1])))
-       # print(" ".join(str(jogo2[k])))
-        #print(" ".join(str(jogo3[k])))
-        #print(" ".join(str(jogo4[k])))
-        #print(" ".join(str(jogo5[k])))
-        #print(" ".join(str(jogo6[k])))
-        #print(" ".join(str(jogo7[k])))
-        #print(" ".join(str(jogo8[k])))
-        #print(" ".join(str(jogo9[k])))
+    #print(" ".join(str(jogo1[0])))
+    #print(" ".join(str(jogo1[1])))
+    #print(" ".join(str(jogo2[k])))
+    #print(" ".join(str(jogo3[k])))
+    #print(" ".join(str(jogo4[k])))
+    #print(" ".join(str(jogo5[k])))
+    #print(" ".join(str(jogo6[k])))
+    #print(" ".join(str(jogo7[k])))
+    #print(" ".join(str(jogo8[k])))
+    #print(" ".join(str(jogo9[k])))
