@@ -1,3 +1,21 @@
+# import random
+
+#def sorteiasudoku(jogo):
+#    sudoku1 = 
+#        [[4,0,9,8,0,2,1,7,0],
+#        [0,0,1,0,4,0,3,0,9],
+#        [0,3,5,0,0,6,0,0,0],
+#        [0,0,0,0,0,3,0,9,0],
+#        [6,9,0,0,5,7,0,0,3],
+#        [0,0,0,0,0,4,6,2,7],
+#        [9,2,6,0,0,8,4,5,1],
+#        [1,5,0,0,2,0,0,3,0],
+#        [0,0,0,0,0,1,9,0,2]]
+#    sudoku2 = 
+# Incluir 10 possibilidades de Sudoku nível fácil retirados do site https://sudoku.com/pt/facil/
+# lista = [sudoku1,sudoku2,sudoku3,sudoku4,sudoku5,sudoku6,sudoku7,sudoku8,sudoku9,sudoku10]
+# return random.choice(lista)
+
 def testarepetidosh(jogo):
     for i in range(0,9):
         for j in range(0,8):
