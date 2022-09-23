@@ -22,5 +22,5 @@ bsudoku.mostrajogo(jogo)
 #    while p2<1 or p2>9:
 #        p2 = int(input("Digite uma coluna válida: "))
 #    jogo[p1-1][p2-1]=n   
-#    bsudoku.mostrajogo(jogo1,jogo2,jogo3,jogo4,jogo5,jogo6,jogo7,jogo8,jogo9)
+#    bsudoku.mostrajogo(jogo)
 #    print("")
