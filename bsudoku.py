@@ -1,6 +1,6 @@
 import random
 
-#def sorteiasudoku(jogo):
+#def sorteiasudoku():
 #    sudoku1 = 
 #        [[4,0,9,8,0,2,1,7,0],
 #        [0,0,1,0,4,0,3,0,9],
