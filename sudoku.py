@@ -13,6 +13,10 @@ bsudoku.mostrajogo(jogo)
 #    p2 = int(input("Digite a coluna: "))
 #    while p2<1 or p2>9:
 #        p2 = int(input("Digite uma coluna válida: "))
-#    jogo[p1-1][p2-1]=n   
+#    if jogo[p1-1][p2-1]==0:
+#        jogo[p1-1][p2-1]=n
+#    else:
+#        print("Essa posição está automaticamente preenchida.")
+# É NECESSÁRIA UMA FORMA DE DIFERENCIAR POSIÇÕES QUE COMEÇARAM PREENCHIDAS E BLOQUEÁ-LAS
 #    bsudoku.mostrajogo(jogo)
 #    print("")
