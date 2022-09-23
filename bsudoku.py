@@ -41,7 +41,7 @@ def testarepetidosvertical(matriz):
 #                                       NECESSÁRIO ACHAR O PADRÃO DE REPETIÇÃO PARA TESTAR
 
 #def testavitoria(matriz):
-#    if testahorizontal(matriz) and testavertical(matriz) adn testaquadrados(matriz):
+#    if testahorizontal(matriz) and testavertical(matriz) and testaquadrados(matriz):
 #        return True
 #    return False
 
