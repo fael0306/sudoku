@@ -64,6 +64,24 @@ def testarepetidosv(matriz):
 #                                       63 64 65 73 74 75 83 84 85 são diferentes e somam 45
 #                                       66 67 68 76 77 78 86 87 88 são diferentes e somam 45
 #                                       NECESSÁRIO ACHAR O PADRÃO DE REPETIÇÃO PARA TESTAR
+# O def de testar quadrado gira em torno de algo parecido com as repetições abaixo
+#soma = 0
+#for i in range(3):
+#    for c in range(soma,soma+3):
+#        for k in range(3):
+#            print(sudoku1[k][c])
+#    soma = soma+3
+#soma = 0
+#for i in range(3):
+#    for c in range(soma,soma+3):
+#        for k in range(3,6):
+#            print(sudoku1[k][c])
+#    soma = soma+3
+#for i in range(3):
+#    for c in range(soma,soma+3):
+#        for k in range(6,9):
+#            print(sudoku1[k][c])
+#    soma = soma+3
 
 #def testavitoria(matriz):
 #    if testahorizontal(matriz) and testavertical(matriz) and testaquadrados(matriz):
