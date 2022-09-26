@@ -77,10 +77,7 @@ def testarepetidosq(jogo):
     return True
 
 def testavitoria(jogo):
-    if testarepetidosv and testarepetidosh and testarepetidosq:
-        return True
-    else:
-        return False
+    return(testarepetidosv and testarepetidosh and testarepetidosq)
 
 def mostrajogo(jogo):
     a = ""
