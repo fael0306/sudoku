@@ -48,31 +48,31 @@ def testarepetidoslistadenove(lista):
     return True
 
 def testarepetidosq(jogo):
-    teste1 = []
-    teste2 = []
-    teste3 = []
+    lista1 = []
+    lista2 = []
+    lista3 = []
     soma = 0
     for i in range(3):
         for c in range(soma,soma+3):
             for k in range(3):
-                teste1.append(sudoku1[c][k])
-        if testarepetidoslistadenove(teste1)==False:
+                lista1.append(sudoku1[c][k])
+        if testarepetidoslistadenove(lista1)==False:
             return False
         soma = soma+3
     soma = 0
     for i in range(3,6):
         for c in range(soma,soma+3):
             for k in range(3,6):
-                teste2.append(sudoku1[i][c])
-        if testarepetidoslistadenove(teste1)==False:
+                lista2.append(sudoku1[i][c])
+        if testarepetidoslistadenove(lista2)==False:
             return False
         soma = soma+3
     soma = 0
     for i in range(6,9):
         for c in range(soma,soma+3):
             for k in range(6,9):
-                teste3.append(sudoku1[i][c])
-        if testarepetidoslistadenove(teste1)==False:
+                lista3.append(sudoku1[i][c])
+        if testarepetidoslistadenove(lista3)==False:
             return False
     return True
 
