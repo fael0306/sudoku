@@ -3,7 +3,7 @@ import bsudoku
 jogo = bsudoku.sorteiasudoku()
 
 bsudoku.mostrajogo(jogo)
-
+print("")
 imutaveis = bsudoku.verificapreenchidos(jogo)
 
 while bsudoku.testavitoria(jogo)==False:
@@ -19,10 +19,11 @@ while bsudoku.testavitoria(jogo)==False:
     if jogo[p1-1][p2-1]==0:
         jogo[p1-1][p2-1]=n
     else:
-        for k in imutaveis:
-            if [p1-1,p2-1]==k:
-                print("Essa posição está automaticamente preenchida. Escolha outra.")
-                bsudoku.mostrajogo(jogo)
+        for k in (0,len(imutaveis)-1):
+            for i in range(0,len(imutaveis[k]-1):
+                if imutaveis[k,i]==jogo[p1-1][p2-1]:
+                    print("Essa posição está automaticamente preenchida. Escolha outra.")
+                    bsudoku.mostrajogo(jogo)
         jogo[p1-1][p2-1]=n
     bsudoku.mostrajogo(jogo)
     print("")

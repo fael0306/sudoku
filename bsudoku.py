@@ -92,15 +92,17 @@ def sorteiasudoku():
      [7,0,0,6,1,0,0,0,9],
      [0,0,0,0,0,7,0,0,0]]
     lista = [sudoku1,sudoku2,sudoku3,sudoku4,sudoku5,sudoku6,sudoku7,sudoku8,sudoku9,sudoku10]
-    return mostrajogo(random.choice(lista))
+    return random.choice(lista)
 
 def verificapreenchidos(jogo):
-    imutaveis = []
-    for l in range(9):
-        for c in range(9):
-            if jogo[l][c]!=0:
-                imutaveis.append([l,c])
-    return imutaveis
+    try:
+        imutaveis = []
+        for l in range(9):
+            for c in range(9):
+                if jogo[l][c]!=0:
+                    imutaveis.append([l,c])
+    except:
+        return imutaveis
 
 # Não precisa testar se a soma dá 45. Se todos os números estão entre 1 e 9 e não repetem na vertical, horizontal ou nos quadrados, está certo o jogo.
 def testarepetidosh(jogo):
@@ -156,7 +158,7 @@ def testarepetidosq(jogo):
     return True
 
 def testavitoria(jogo):
-    return(testarepetidosv and testarepetidosh and testarepetidosq)
+    return(testarepetidosv==False and testarepetidosh==False and testarepetidosq==False)
 
 def mostrajogo(jogo):
     a = ""
@@ -165,3 +167,4 @@ def mostrajogo(jogo):
             a = a+str(k)
         print(a)
         a=""
+    
