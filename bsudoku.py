@@ -23,7 +23,7 @@ def sorteiasudoku():
     lista = [sudoku1,sudoku2]#,sudoku3,sudoku4,sudoku5,sudoku6,sudoku7,sudoku8,sudoku9,sudoku10]
     return mostrajogo(random.choice(lista))
 
-# Não precisa testar se a soma dá 45. Se todos os números estão entre 1 e 9 e não repetem na vertical e horizontal, está certo o jogo.
+# Não precisa testar se a soma dá 45. Se todos os números estão entre 1 e 9 e não repetem na vertical, horizontal ou nos quadrados, está certo o jogo.
 def testarepetidosh(jogo):
     for i in range(0,9):
         for j in range(0,8):
