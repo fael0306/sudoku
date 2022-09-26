@@ -40,40 +40,47 @@ def testarepetidosv(jogo):
                     return False
     return True
 
-#def testarepetidosq(jogo):
-#    soma = 0
-#    for i in range(3):
-#        for c in range(soma,soma+3):
-#            for k in range(3):
-#                # if testa se são iguais
-#                # se forem iguais, returna False
-#        soma = soma+3
-#    soma = 0
-#    for i in range(3):
-#        for c in range(soma,soma+3):
-#            for k in range(3,6):
-#                # if testa se são iguais
-#                # se forem iguais, returna False
-#        soma = soma+3
-#    soma = 0
-#    for i in range(3):
-#        for c in range(soma,soma+3):
-#            for k in range(6,9):
-#                # if testa se são iguais
-#                # se forem iguais, returna False
-#        soma = soma+3
-#    return True
+def testarepetidoslistadenove(lista):
+    for k in range(8):
+        for i in range(k+1,9):
+            if lista[k]==lista[i]:
+                return False
+    return True
 
-#def testaquadrados(jogo) - Verifica se 00 01 02 10 11 12 20 21 22 são diferentes
-#                                       03 04 05 13 14 15 23 24 25 são diferentes
-#                                       06 07 08 16 17 18 26 27 28 são diferentes
-#                                       30 31 32 40 41 42 50 51 52 são diferentes
-#                                       33 34 35 43 44 52 53 54 55 são diferentes
-#                                       36 37 38 46 47 48 56 57 58 são diferentes
-#                                       60 61 62 70 71 72 80 81 82 são diferentes
-#                                       63 64 65 73 74 75 83 84 85 são diferentes
-#                                       66 67 68 76 77 78 86 87 88 são diferentes
-#                                       NECESSÁRIO ACHAR O PADRÃO DE REPETIÇÃO PARA TESTAR
+def testarepetidosq(jogo):
+    teste1 = []
+    teste2 = []
+    teste3 = []
+    soma = 0
+    for i in range(3):
+        for c in range(soma,soma+3):
+            for k in range(3):
+                teste1.append(sudoku1[c][k])
+        if testarepetidoslistadenove(teste1)==False:
+            return False
+        soma = soma+3
+    soma = 0
+    for i in range(3,6):
+        for c in range(soma,soma+3):
+            for k in range(3,6):
+                teste2.append(sudoku1[i][c])
+        if testarepetidoslistadenove(teste1)==False:
+            return False
+        soma = soma+3
+    soma = 0
+    for i in range(6,9):
+        for c in range(soma,soma+3):
+            for k in range(6,9):
+                teste3.append(sudoku1[i][c])
+        if testarepetidoslistadenove(teste1)==False:
+            return False
+    return True
+
+def testavitoria(jogo):
+    if testarepetidosv and testarepetidosh and testarepetidosq:
+        return True
+    else:
+        return False
 
 def mostrajogo(jogo):
     a = ""
