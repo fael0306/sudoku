@@ -40,8 +40,30 @@ def testarepetidosv(jogo):
                     return False
     return True
 
+#def testarepetidosq(jogo):
+#    soma = 0
+#    for i in range(3):
+#        for c in range(soma,soma+3):
+#            for k in range(3):
+#                # if testa se são iguais
+#                # se forem iguais, returna False
+#        soma = soma+3
+#    soma = 0
+#    for i in range(3):
+#        for c in range(soma,soma+3):
+#            for k in range(3,6):
+#                # if testa se são iguais
+#                # se forem iguais, returna False
+#        soma = soma+3
+#    soma = 0
+#    for i in range(3):
+#        for c in range(soma,soma+3):
+#            for k in range(6,9):
+#                # if testa se são iguais
+#                # se forem iguais, returna False
+#        soma = soma+3
+#    return True
 
-#def testarepetidosq(jogo) - Verifica se cada elemento de cada quadrado 3x3 da matriz possui números diferentes
 #def testaquadrados(jogo) - Verifica se 00 01 02 10 11 12 20 21 22 são diferentes
 #                                       03 04 05 13 14 15 23 24 25 são diferentes
 #                                       06 07 08 16 17 18 26 27 28 são diferentes
@@ -52,29 +74,6 @@ def testarepetidosv(jogo):
 #                                       63 64 65 73 74 75 83 84 85 são diferentes
 #                                       66 67 68 76 77 78 86 87 88 são diferentes
 #                                       NECESSÁRIO ACHAR O PADRÃO DE REPETIÇÃO PARA TESTAR
-# O def de testar quadrado gira em torno de algo parecido com as repetições abaixo
-#soma = 0
-#for i in range(3):
-#    for c in range(soma,soma+3):
-#        for k in range(3):
-#            print(sudoku1[k][c])
-#    soma = soma+3
-#soma = 0
-#for i in range(3):
-#    for c in range(soma,soma+3):
-#        for k in range(3,6):
-#            print(sudoku1[k][c])
-#    soma = soma+3
-#for i in range(3):
-#    for c in range(soma,soma+3):
-#        for k in range(6,9):
-#            print(sudoku1[k][c])
-#    soma = soma+3
-
-#def testavitoria(matriz):
-#    if testahorizontal(matriz) and testavertical(matriz) and testaquadrados(matriz):
-#        return True
-#    return False
 
 def mostrajogo(jogo):
     a = ""
