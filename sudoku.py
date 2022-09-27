@@ -19,9 +19,8 @@ def main():
             p2 = int(input("Digite uma coluna válida: "))
         if jogo[p1-1][p2-1]==0:
             jogo[p1-1][p2-1]=n
-        else: # Testar esse else
+        else:
             for k in range(0,len(imutaveis)-1):
-                #o if está sendo ignorado
                 if imutaveis[k]==[p1-1, p2-1]:
                     print("Essa posição está automaticamente preenchida. Escolha outra.")
                     bsudoku.mostrajogo(jogo)
