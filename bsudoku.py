@@ -159,7 +159,7 @@ def testarepetidosq(jogo):
     return True
 
 def testavitoria(jogo):
-    return(testarepetidosv==True and testarepetidosh==True and testarepetidosq==True)
+    return(testarepetidosv and testarepetidosh and testarepetidosq)
 
 def mostrajogo(jogo):
     a = ""
