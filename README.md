@@ -1,3 +1,6 @@
 # Sudoku
 
-Início de projeto para criação de jogo Sudoku em Python
+O famoso jogo de Sudoku.
+
+![image](https://user-images.githubusercontent.com/25599308/192454816-754cacb9-4571-4d15-8a03-d2310b2335fd.png)
+
