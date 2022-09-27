@@ -25,7 +25,7 @@ def main():
             jogo[p1-1][p2-1]=n
             bsudoku.mostrajogo(jogo)
         else:
-            # Há algo de errado com esse loop
+            # Há algo de errado com esse loop. O jogo entra no if e no else. Printa a frase e preenche o jogo.
             for k in range(0,len(imutaveis)-1):
                 if imutaveis[k]==[p1-1, p2-1]:
                     print("Essa posição está automaticamente preenchida. Escolha outra.")
