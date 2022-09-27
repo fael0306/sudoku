@@ -32,5 +32,6 @@ def main():
                 else:
                     jogo[p1-1][p2-1]=n
             bsudoku.mostrajogo(jogo)
-        print("")     
+        print("")
+    print("Parabéns, você venceu")
 main()
