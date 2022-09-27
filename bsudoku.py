@@ -129,13 +129,10 @@ def testarepetidoslistadenove(lista):
                 return False
     return True
 
-# Essa função está errada
 def testarepetidosq(jogo):
-    lista1 = []
-    lista2 = []
-    lista3 = []
     soma = 0
     for i in range(3):
+        lista1=[]
         for c in range(soma,soma+3):
             for k in range(3):
                 lista1.append(jogo[c][k])
@@ -144,17 +141,19 @@ def testarepetidosq(jogo):
         soma = soma+3
     soma = 0
     for i in range(3,6):
+        lista2=[]
         for c in range(soma,soma+3):
             for k in range(3,6):
-                lista2.append(jogo[i][c])
+                lista2.append(jogo[c][k])
         if testarepetidoslistadenove(lista2)==False:
             return False
         soma = soma+3
     soma = 0
     for i in range(6,9):
+        lista3=[]
         for c in range(soma,soma+3):
             for k in range(6,9):
-                lista3.append(jogo[i][c])
+                lista3.append(jogo[c][k])
         if testarepetidoslistadenove(lista3)==False:
             return False
     return True
