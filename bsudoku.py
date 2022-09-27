@@ -129,6 +129,7 @@ def testarepetidoslistadenove(lista):
                 return False
     return True
 
+# Essa função está errada
 def testarepetidosq(jogo):
     lista1 = []
     lista2 = []
