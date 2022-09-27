@@ -137,7 +137,7 @@ def testarepetidosq(jogo):
     for i in range(3):
         for c in range(soma,soma+3):
             for k in range(3):
-                lista1.append(sudoku1[c][k])
+                lista1.append(jogo[c][k])
         if testarepetidoslistadenove(lista1)==False:
             return False
         soma = soma+3
@@ -145,7 +145,7 @@ def testarepetidosq(jogo):
     for i in range(3,6):
         for c in range(soma,soma+3):
             for k in range(3,6):
-                lista2.append(sudoku1[i][c])
+                lista2.append(jogo[i][c])
         if testarepetidoslistadenove(lista2)==False:
             return False
         soma = soma+3
@@ -153,7 +153,7 @@ def testarepetidosq(jogo):
     for i in range(6,9):
         for c in range(soma,soma+3):
             for k in range(6,9):
-                lista3.append(sudoku1[i][c])
+                lista3.append(jogo[i][c])
         if testarepetidoslistadenove(lista3)==False:
             return False
     return True
