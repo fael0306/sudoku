@@ -18,12 +18,12 @@ while bsudoku.testavitoria(jogo)==False:
         p2 = int(input("Digite uma coluna válida: "))
     if jogo[p1-1][p2-1]==0:
         jogo[p1-1][p2-1]=n
-    else:
-        for k in (0,len(imutaveis)-1):
-            for i in range(0,len(imutaveis[k])-1):
-                if imutaveis[k,i]==jogo[p1-1][p2-1]:
-                    print("Essa posição está automaticamente preenchida. Escolha outra.")
-                    bsudoku.mostrajogo(jogo)
-        jogo[p1-1][p2-1]=n
+    else: # Testar esse else
+        for k in (0,len(imutaveis)):
+            if imutaveis[k]==jogo[p1-1][p2-1]:
+                print("Essa posição está automaticamente preenchida. Escolha outra.")
+                bsudoku.mostrajogo(jogo)
+            else:
+                jogo[p1-1][p2-1]=n
     bsudoku.mostrajogo(jogo)
     print("")
