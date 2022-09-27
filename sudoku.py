@@ -1,7 +1,6 @@
 import bsudoku
 
 def main():
-
     jogo = bsudoku.sorteiasudoku()
 
     bsudoku.mostrajogo(jogo)
