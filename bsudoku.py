@@ -101,6 +101,7 @@ def verificapreenchidos(jogo):
             for c in range(9):
                 if jogo[l][c]!=0:
                     imutaveis.append([l,c])
+        return imutaveis
     except:
         return imutaveis
 

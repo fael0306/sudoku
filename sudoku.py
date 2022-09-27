@@ -21,11 +21,13 @@ def main():
             jogo[p1-1][p2-1]=n
         else: # Testar esse else
             for k in range(0,len(imutaveis)-1):
-                if imutaveis[k]==jogo[p1-1][p2-1]:
+                #o if está sendo ignorado
+                if imutaveis[k]==[p1-1, p2-1]:
                     print("Essa posição está automaticamente preenchida. Escolha outra.")
                     bsudoku.mostrajogo(jogo)
-            jogo[p1-1][p2-1]=n
-        print("")
+                else:
+                    jogo[p1-1][p2-1]=n
+                    bsudoku.mostrajogo(jogo)
         bsudoku.mostrajogo(jogo)
         print("")     
 main()
