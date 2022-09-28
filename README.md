@@ -8,3 +8,4 @@ O famoso jogo de Sudoku.
 
 2. Vencendo o jogo
 
+![image](https://user-images.githubusercontent.com/25599308/192731819-52cdae79-0a49-47a6-a223-ac4b7921e069.png)
