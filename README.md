@@ -3,7 +3,7 @@
 O famoso jogo de Sudoku.
 
 1. Jogando
-![image](https://user-images.githubusercontent.com/25599308/192454816-754cacb9-4571-4d15-8a03-d2310b2335fd.png)
+![image](https://user-images.githubusercontent.com/25599308/192729176-dc75a96f-f4ca-4ce2-ac30-88d752137a39.png)
 
-Vencendo o jogo
+2. Vencendo o jogo
 
