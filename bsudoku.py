@@ -158,8 +158,15 @@ def testarepetidosq(jogo):
             return False
     return True
 
+def testadiferentedezero(jogo):
+    for k in range(9):
+        for i in range(9):
+            if jogo[k][i]==0:
+                return False
+    return True
+
 def testavitoria(jogo):
-    return(testarepetidosv(jogo)==True and testarepetidosh(jogo)==True and testarepetidosq(jogo)==True)
+    return(testarepetidosv(jogo)==True and testarepetidosh(jogo)==True and testarepetidosq(jogo)==True and testadiferentedezero(jogo)==True)
 
 def mostrajogo(jogo):
     a = ""
