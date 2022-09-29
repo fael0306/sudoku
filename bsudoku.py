@@ -170,9 +170,17 @@ def testavitoria(jogo):
 
 def mostrajogo(jogo):
     a = ""
+    cont = 0
+    cont2 = 0
     for i in range(9):
         for k in list(jogo[i]):
             a = a+str(k)
+            cont = cont+1
+            if cont%3==0:
+                a = a+"  "
         print(a)
+        cont2 = cont2+1
+        if cont2%3==0:
+            print("")
         a=""
     
