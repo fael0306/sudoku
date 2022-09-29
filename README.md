@@ -4,8 +4,8 @@ O famoso jogo de Sudoku.
 
 1. Jogando
 
-![image](https://user-images.githubusercontent.com/25599308/192729176-dc75a96f-f4ca-4ce2-ac30-88d752137a39.png)
+![image](https://user-images.githubusercontent.com/25599308/192979680-a84c02c4-81cb-4814-80e9-681f4c95ce4f.png)
 
 2. Vencendo o jogo
 
-![image](https://user-images.githubusercontent.com/25599308/192731819-52cdae79-0a49-47a6-a223-ac4b7921e069.png)
+![image](https://user-images.githubusercontent.com/25599308/192980760-ea9b3793-4136-49ef-86bc-036c71698d2b.png)
