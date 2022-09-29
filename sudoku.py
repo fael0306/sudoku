@@ -16,6 +16,7 @@ def main():
             while p1<1 or p1>9:
                 p1 = int(input("Digite uma linha válida: "))
             p2 = int(input("Digite a coluna: "))
+            print("")
             while p2<1 or p2>9:
                 p2 = int(input("Digite uma coluna válida: "))
         except ValueError:
